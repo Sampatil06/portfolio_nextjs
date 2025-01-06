@@ -1,101 +1,170 @@
 import Image from "next/image";
+import Link from "next/link";
+import "@/app/main.css";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      {/* <!-- Hero Section --> */}
+      <section className="hero">
+        <div className="container">
+          <h1>Welcome to My Portfolio</h1>
+          <p>
+            I'm a software developer passionate about Web Development, AI/ML &
+            Data Science.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* <!-- About Section --> */}
+      <section id="about">
+        <div className="about-container">
+          <div className="profile-photo">
+            <Image
+              src="/images/profile.jpg"
+              alt="Samarth Patil"
+              width={200}
+              height={300}
+            />
+          </div>
+          <div className="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hello! I'm Samarth Patil, a B.Tech student specializing in
+              software development. I am passionate about web development, AI,
+              and machine learning. I enjoy solving problems, creating
+              innovative solutions, and continuously learning new technologies.
+              I aim to leverage my technical skills to contribute to impactful
+              projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- Projects Section --> */}
+      <section id="projects">
+        <h2 className="text-2xl pl-28 pb-5">Projects</h2>
+        <div className="project-list">
+          <div className="project-card">
+            <Image
+              src="/images/Adaptlearn.png"
+              alt="AdaptLearn Hub"
+              className="h-52 w-72"
+              width={200}
+              height={300}
+            />
+            <h3>AdaptLearn Hub</h3>
+            <p>An AI-based learning platform for kids.</p>
+            <Link href="/adaptLearnHub">View Details</Link>
+          </div>
+          <div className="project-card">
+            <Image
+              src="/images/diet-prediction.jpg"
+              alt="Diet Prediction Project"
+              className="h-52 w-72"
+              width={200}
+              height={300}
+            />
+            <h3>Diet Prediction Website</h3>
+            <p>
+              A machine learning-based platform for personalized diet plans.
+            </p>
+            <Link href="/dietPrediction">View Details</Link>
+          </div>
+          <div className="project-card">
+            <Image
+              src="/images/digilib.jpg"
+              alt="Digilib Project"
+              className="h-52 w-72"
+              width={200}
+              height={300}
+            />
+            <h3>Digilib</h3>
+            <p>A digital library with personalized book recommendations.</p>
+            <Link href="/digiLib">View Details</Link>
+          </div>
+          <div className="project-card">
+            <Image
+              src="/images/urbancommute.jpg"
+              alt="UrbanCommute Project"
+              className="h-52 w-72"
+              width={200}
+              height={300}
+            />
+            <h3>UrbanCommute</h3>
+            <p>A travel app with real-time transportation info.</p>
+            <Link href="/urbanCommute">View Details</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- Skills Section --> */}
+      <section id="skills">
+        <h2>Skills</h2>
+        <div className="skills-container">
+          <div className="skills-list">
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Java - Intermediate</li>
+              <li>Python - Intermediate</li>
+              <li>C/C++ - Intermediate</li>
+              <li>MySQL, MongoDB - Beginner</li>
+            </ul>
+          </div>
+          <div className="skills-list">
+            <h3>Other Technologies Known</h3>
+            <ul>
+              <li>HTML, CSS - Intermediate</li>
+              <li>NodeJs - Beginner</li>
+              <li>Django - Beginner</li>
+              <li>PowerBI, Tableau - Intermediate</li>
+              <li>
+                OOPS, Artificial Intelligence, Machine Learning, JavaScript,
+                PHP, ChatGPT
+              </li>
+            </ul>
+          </div>
+          <div className="skills-list">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Software Development</li>
+              <li>Project Management</li>
+              <li>Communication</li>
+              <li>Leadership</li>
+              <li>Reporting</li>
+              <li>Quick Learner</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* <!-- Resume Section --> */}
+      <section id="resume">
+        <h2>Resume</h2>
+        <Link href="files/Samarth Patil_Resume.pdf" download>
+          Download Resume
+        </Link>
+      </section>
+
+      {/* <!-- Contact Section --> */}
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Email:{" "}
+          <Link href="mailto:patilsamarth1947@gmail.com">
+            patilsamarth1947@gmail.com
+          </Link>
+        </p>
+        <p>
+          LinkedIn:{" "}
+          <Link
+            href="https://www.linkedin.com/in/samarthpatill/"
+            target="_blank"
+          >
+            Samarth Patil
+          </Link>
+        </p>
+      </section>
     </div>
   );
 }
