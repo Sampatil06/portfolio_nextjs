@@ -1,17 +1,18 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <a className="navbar-brand" href="/">
+      <Link className="navbar-brand" href="/">
         Samarth Patil
-      </a>
+      </Link>
       <div className="navbar-links">
-        <a href="/#about">About</a>
-        <a href="/#projects">Projects</a>
-        <a href="/#skills">Skills</a>
-        <a href="/#resume">Resume</a>
-        <a href="/#contact">Contact</a>
+        <Link href="/#about">About</Link>
+        <Link href="/#projects">Projects</Link>
+        <Link href="/#skills">Skills</Link>
+        <Link href="/#resume">Resume</Link>
+        <Link href="/#contact">Contact</Link>
       </div>
     </nav>
   );

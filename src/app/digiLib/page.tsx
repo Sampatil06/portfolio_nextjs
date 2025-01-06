@@ -17,12 +17,12 @@ const digiLib = () => {
         <div className="container">
           <h2>Abstract</h2>
           <p>
-            In today's digital age, traditional libraries are evolving into
+            In today&apos;s digital age, traditional libraries are evolving into
             digital libraries—vast online book collections accessible from
             anywhere. These libraries leverage technology to organize and share
             books, making them easy to find on computers and phones.
             Complementing this transformation are smart recommendation systems
-            that suggest books tailored to users' interests using advanced
+            that suggest books tailored to users&apos; interests using advanced
             algorithms. This paper explores the synergy between digital
             libraries and recommendation systems, examining their structure,
             functionality, and challenges. Together, they revolutionize how we

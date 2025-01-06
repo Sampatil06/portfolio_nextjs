@@ -10,8 +10,8 @@ export default function Home() {
         <div className="container">
           <h1>Welcome to My Portfolio</h1>
           <p>
-            I'm a software developer passionate about Web Development, AI/ML &
-            Data Science.
+            I&apos;m a software developer passionate about Web Development,
+            AI/ML & Data Science.
           </p>
         </div>
       </section>
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="about-text">
             <h2>About Me</h2>
             <p>
-              Hello! I'm Samarth Patil, a B.Tech student specializing in
+              Hello! I&apos;m Samarth Patil, a B.Tech student specializing in
               software development. I am passionate about web development, AI,
               and machine learning. I enjoy solving problems, creating
               innovative solutions, and continuously learning new technologies.

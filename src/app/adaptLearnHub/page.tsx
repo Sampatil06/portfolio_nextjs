@@ -18,8 +18,8 @@ const AdaptLearnhub = () => {
         <div className="container">
           <h2>Abstract</h2>
           <p>
-            The "AdaptLearn Hub" is an AI-powered educational platform designed
-            to support students with learning difficulties. Utilizing object
+            The AdaptLearn Hub is an AI-powered educational platform designed to
+            support students with learning difficulties. Utilizing object
             detection, semantic segmentation, and Text-to-Speech technology, it
             creates tailored learning experiences with adaptive algorithms for
             customizable learning paths. Featuring interactive modules,
